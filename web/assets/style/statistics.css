@@ -1,0 +1,39 @@
+#dayWise,
+#monthWise {
+    max-height: 40vh;
+    margin: 20px 0px;
+}
+
+#siteWise {
+    max-width: 90vmin;
+    max-height: 90vmin;
+}
+
+tr.None {
+    background-color: #dddddd;
+}
+
+tr.Ignore {
+    background-color: #ffff86;
+}
+
+tr.Time-limit {
+    background-color: #00f2ff;
+}
+
+tr.block {
+    background-color: #ff5e5e;
+}
+
+tbody>tr {
+    border-bottom: 4px solid white;
+}
+
+select.form-select {
+    width: 100%;
+    max-width: 180px;
+}
+
+.table-responsive-md {
+    margin: 10px;
+}

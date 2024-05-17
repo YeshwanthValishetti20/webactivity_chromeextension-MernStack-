@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Website Tracker",
+  "version": "0.0.1",
+  "description": "The \"Website Tracker\" Chrome extension helps you monitor and manage your web browsing habits by tracking the time spent on each website. Additionally, it provides analytics in the form of graphs and charts, allowing you to visualize your usage patterns.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "assets/img/logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html", "statistics.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "script-src": "'self' https://cdnjs.cloudflare.com"
+  }
+}
